@@ -54,11 +54,8 @@ const Experience: React.FC = () => {
         <h2>My Work Experience</h2>
       </div>
       <div>
-        {experienceList.map((experience) => (
-          <ExperienceItems
-            key={experience.institution}
-            experience={experience}
-          />
+        {experienceList.map((experience, index) => (
+          <ExperienceItems key={index} experience={experience} />
         ))}
       </div>
     </div>

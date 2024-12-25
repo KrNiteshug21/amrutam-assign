@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 interface DoctorProps {
   name: string;
@@ -140,12 +141,18 @@ const DoctorCard: React.FC<DoctorProps> = (doctor) => {
               </span>
             </button>
           </div>
-          <button className="border-2 border-green-800 px-4 py-2 rounded-md w-full font-medium text-green-800">
+          <Link
+            to="/doctors"
+            className="border-2 border-green-800 px-4 py-2 rounded-md w-full font-medium text-center text-green-800"
+          >
             View Profile
-          </button>
-          <button className="bg-green-800 px-4 py-2 rounded-md w-full text-white">
+          </Link>
+          <Link
+            to="/doctors"
+            className="bg-green-800 px-4 py-2 rounded-md w-full text-center text-white"
+          >
             Book a Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </div>

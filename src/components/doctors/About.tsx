@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 
 const About: React.FC = () => {
+  const [follow, setFollow] = useState<Boolean>(false);
+
   return (
     <div className="border-2 border-gray-200 rounded-xl w-[600px] overflow-hidden">
       <div className="flex justify-between items-center bg-gray-100 px-4 py-3 text-xl">
         <h2>A little about me</h2>
-        <button className="border-2 border-gray-900 px-2 rounded-md text-lg">
-          Follow +
+        <button
+          onClick={() => setFollow(!follow)}
+          className={`${
+            follow
+              ? "bg-green-800 text-white py-2"
+              : "py-1 border-2 border-gray-900"
+          }  px-2  rounded-md text-lg`}
+        >
+          {follow ? "Unfollow" : "Follow"} +
         </button>
       </div>
       <div className="space-y-4 p-4">
