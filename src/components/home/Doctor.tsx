@@ -129,21 +129,21 @@ const DoctorCard: React.FC<DoctorProps> = (doctor) => {
           <div className="flex justify-center gap-4 my-2">
             <button className="flex flex-col items-center border-2 p-2 rounded-md text-center">
               <span>Video Consultation</span>
-              <span className="font-semibold text-green-600">
-                ₹{doctor.videoFees === 0 ? "Free" : doctor.videoFees}
+              <span className="font-semibold text-green-800">
+                {doctor.videoFees === 0 ? "Free" : `₹${doctor.videoFees}`}
               </span>
             </button>
             <button className="flex flex-col items-center border-2 p-2 rounded-md text-center">
               <span>Chat Consultation</span>
-              <span className="font-semibold text-green-600">
-                ₹{doctor.videoFees == 0 ? "Free" : doctor.chatFees}
+              <span className="font-semibold text-green-800">
+                {doctor.videoFees === 0 ? "Free" : `₹${doctor.chatFees}`}
               </span>
             </button>
           </div>
-          <button className="border-2 border-green-600 px-4 py-2 rounded-md w-full font-medium text-green-600">
+          <button className="border-2 border-green-800 px-4 py-2 rounded-md w-full font-medium text-green-800">
             View Profile
           </button>
-          <button className="bg-green-600 px-4 py-2 rounded-md w-full text-white">
+          <button className="bg-green-800 px-4 py-2 rounded-md w-full text-white">
             Book a Consultation
           </button>
         </div>

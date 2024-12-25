@@ -13,10 +13,10 @@ const Navbar: React.FC = () => {
         <Link to="/about">About</Link>
       </div>
       <div className="flex gap-4 text-lg">
-        <button className="border-2 border-green-600 px-4 py-2 rounded-md font-medium text-green-600">
+        <button className="border-2 border-green-800 px-4 py-2 rounded-md font-medium text-green-800">
           Login
         </button>
-        <button className="bg-green-600 px-4 py-2 rounded-md text-white">
+        <button className="bg-green-800 px-4 py-2 rounded-md text-white">
           Signup
         </button>
       </div>

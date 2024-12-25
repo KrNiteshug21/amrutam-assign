@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           <div className="relative flex-1 basis-1/3">
             <MdLocationOn
               size={24}
-              className="top-1/2 left-2 absolute text-green-600 -translate-y-1/2 t"
+              className="top-1/2 left-2 absolute text-green-800 -translate-y-1/2 t"
             />
             <input
               type="text"
